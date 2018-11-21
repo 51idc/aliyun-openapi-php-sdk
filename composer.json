@@ -1,74 +1,87 @@
 {
-    "name": "anchnet/aliyun-openapi-php-sdk",
-    "description": "Alibaba Cloud SDK for PHP",
-    "license": "Apache-2.0",
-    "authors": [{
-        "name": "wudi",
-        "email": "wudi@anchent.com"
-    }],
-    "require": {
-        "guzzlehttp/guzzle": "^6.3"
-    },
-    "autoload": {
-        "classmap": ["aliyun-php-sdk-core/"],
-        "exclude-from-classmap":[
-            "aliyun-php-sdk-core/Config.php",
-            "aliyun-php-sdk-core/Autoloader/"
-        ],
-        "files":[
-            "aliyun-php-sdk-core/Regions/EndpointConfig.php"
-        ],
-        "psr-4": {
-            "aegis\\": "aliyun-php-sdk-aegis/aegis",
-            "afs\\": "aliyun-php-sdk-afs/afs",
-            "Alidns\\": "aliyun-php-sdk-alidns/Alidns",
-            "ARMS\\": "aliyun-php-sdk-arms/ARMS",
-            "ARMS4FINANCE\\": "aliyun-php-sdk-arms4finance/ARMS4FINANCE",
-            "BatchCompute\\": "aliyun-php-sdk-batchcompute/BatchCompute",
-            "CCC\\": "aliyun-php-sdk-ccc/CCC",
-            "Cdn\\": "aliyun-php-sdk-cdn/Cdn",
-            "Chatbot\\": "aliyun-php-sdk-chatbot/Chatbot",
-            "Cloudauth\\": "aliyun-php-sdk-cloudauth/Cloudauth",
-            "CloudPhoto\\": "aliyun-php-sdk-cloudphoto/CloudPhoto",
-            "Cms\\": "aliyun-php-sdk-cms/Cms",
-            "CS\\": "aliyun-php-sdk-cs/CS",
-            "CSB\\": "aliyun-php-sdk-csb/CSB",
-            "Dds\\": "aliyun-php-sdk-dds/Dds",
-            "Dm\\":"aliyun-php-sdk-dm/Dm",
-            "Domain\\":"aliyun-php-sdk-domain/Domain",
-            "Domain_intl\\": "aliyun-php-sdk-domain_intl/Domain_intl",
-            "Ecs\\":"aliyun-php-sdk-ecs/Ecs",
-            "EHPC\\":"aliyun-php-sdk-ehpc/EHPC",
-            "Ess\\":"aliyun-php-sdk-ess/Ess",
-            "Green\\":"aliyun-php-sdk-green/Green",
-            "Iot\\":"aliyun-php-sdk-iot/Iot",
-            "jaq\\":"aliyun-php-sdk-jaq/jaq",
-            "Kms\\":"aliyun-php-sdk-kms/Kms",
-            "live\\":"aliyun-php-sdk-live/live",
-            "Market\\":"aliyun-php-sdk-market/Market",
-            "Mts\\":"aliyun-php-sdk-mts/Mts",
-            "NAS\\":"aliyun-php-sdk-nas/NAS",
-            "Ons\\":"aliyun-php-sdk-ons/Ons",
-            "Push\\":"aliyun-php-sdk-push/Push",
-            "R_kvstore\\":"aliyun-php-sdk-r-kvstore/R_kvstore",
-            "Ram\\":"aliyun-php-sdk-ram/Ram",
-            "Rds\\":"aliyun-php-sdk-rds/Rds",
-            "Sas_api\\":"aliyun-php-sdk-sas-api/Sas_api",
-            "Slb\\":"aliyun-php-sdk-slb/Slb",
-            "Sts\\":"aliyun-php-sdk-sts/Sts",
-            "TeslaDam\\":"aliyun-php-sdk-tesladam/TeslaDam",
-            "TeslaMaxCompute\\":"aliyun-php-sdk-teslamaxcompute/TeslaMaxCompute",
-            "Ubsms\\":"aliyun-php-sdk-ubsms/Ubsms",
-            "Vod\\":"aliyun-php-sdk-vod/Vod",
-            "Vpc\\": "aliyun-php-sdk-vpc/Vpc"
-        }
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~5.0"
+  "name": "qfz9527/aliyun-openapi-php-sdk",
+  "description": "Alibaba Cloud SDK for PHP",
+  "keywords": [
+    "aliyun",
+    "openapi",
+    "sdk"
+  ],
+  "type": "library",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/qfz9527/aliyun-openapi-php-sdk",
+  "authors": [
+    {
+      "name": "qfz9527",
+      "email": "qfz9527@gmail.com",
+      "homepage": "https://github.com/qfz9527/aliyun-openapi-php-sdk",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "classmap": [
+      "aliyun-php-sdk-core/"
+    ],
+    "exclude-from-classmap": [
+      "aliyun-php-sdk-core/Config.php",
+      "aliyun-php-sdk-core/Autoloader/"
+    ],
+    "files": [
+      "aliyun-php-sdk-core/Regions/EndpointConfig.php"
+    ],
+    "psr-4": {
+      "aegis\\": "aliyun-php-sdk-aegis/aegis",
+      "afs\\": "aliyun-php-sdk-afs/afs",
+      "Alidns\\": "aliyun-php-sdk-alidns/Alidns",
+      "ARMS\\": "aliyun-php-sdk-arms/ARMS",
+      "ARMS4FINANCE\\": "aliyun-php-sdk-arms4finance/ARMS4FINANCE",
+      "BatchCompute\\": "aliyun-php-sdk-batchcompute/BatchCompute",
+      "CCC\\": "aliyun-php-sdk-ccc/CCC",
+      "Cdn\\": "aliyun-php-sdk-cdn/Cdn",
+      "Chatbot\\": "aliyun-php-sdk-chatbot/Chatbot",
+      "Cloudauth\\": "aliyun-php-sdk-cloudauth/Cloudauth",
+      "CloudPhoto\\": "aliyun-php-sdk-cloudphoto/CloudPhoto",
+      "Cms\\": "aliyun-php-sdk-cms/Cms",
+      "CS\\": "aliyun-php-sdk-cs/CS",
+      "CSB\\": "aliyun-php-sdk-csb/CSB",
+      "Dds\\": "aliyun-php-sdk-dds/Dds",
+      "Dm\\": "aliyun-php-sdk-dm/Dm",
+      "Domain\\": "aliyun-php-sdk-domain/Domain",
+      "Domain_intl\\": "aliyun-php-sdk-domain_intl/Domain_intl",
+      "Ecs\\": "aliyun-php-sdk-ecs/Ecs",
+      "EHPC\\": "aliyun-php-sdk-ehpc/EHPC",
+      "Ess\\": "aliyun-php-sdk-ess/Ess",
+      "Green\\": "aliyun-php-sdk-green/Green",
+      "Iot\\": "aliyun-php-sdk-iot/Iot",
+      "jaq\\": "aliyun-php-sdk-jaq/jaq",
+      "Kms\\": "aliyun-php-sdk-kms/Kms",
+      "live\\": "aliyun-php-sdk-live/live",
+      "Market\\": "aliyun-php-sdk-market/Market",
+      "Mts\\": "aliyun-php-sdk-mts/Mts",
+      "NAS\\": "aliyun-php-sdk-nas/NAS",
+      "Ons\\": "aliyun-php-sdk-ons/Ons",
+      "Push\\": "aliyun-php-sdk-push/Push",
+      "R_kvstore\\": "aliyun-php-sdk-r-kvstore/R_kvstore",
+      "Ram\\": "aliyun-php-sdk-ram/Ram",
+      "Rds\\": "aliyun-php-sdk-rds/Rds",
+      "Sas_api\\": "aliyun-php-sdk-sas-api/Sas_api",
+      "Slb\\": "aliyun-php-sdk-slb/Slb",
+      "Sts\\": "aliyun-php-sdk-sts/Sts",
+      "TeslaDam\\": "aliyun-php-sdk-tesladam/TeslaDam",
+      "TeslaMaxCompute\\": "aliyun-php-sdk-teslamaxcompute/TeslaMaxCompute",
+      "Ubsms\\": "aliyun-php-sdk-ubsms/Ubsms",
+      "Vod\\": "aliyun-php-sdk-vod/Vod",
+      "Vpc\\": "aliyun-php-sdk-vpc/Vpc"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/TestCase.php"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  }
 }
